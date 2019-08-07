@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>modular-2 system setup</title>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/default.css" rel="stylesheet" type="text/css">
+  <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <script src="/js/jquery-3.4.1.min.js"></script>
+   <script src="/js/bootstrap.min.js"></script>
+   <script src="/js/bootstrap-switch.min.js"></script> 
+   <script src="/js/baseservice.js"></script> 
+   <style>
+       .led {
+        margin: 5px; 
+     background-color: blue;
+     width:15px;
+     height:15px;
+     display:inline-block;
+   } 
+   </style>
+  </head>
+
+ <body class="container">
+   <!-- Image and text -->
+   <nav class="navbar fixed-top  navbar-default ">
+      <a class="nav-link" href="http://localhost:2019/home/views/index.html"><i class="icon-home icon-2x "> </i>主页</a>
+      <a class="navbar-brand" href="#">数字IO</a>
+      <a class="nav-link  pull-right" href="http://localhost:9100/views/gpio_setup.html"><i class="icon-cogs icon-2x"> </i>设置</a>
+    </nav>
+   
+    <ul class="list-group">
+        <li class="list-group-item"><div class="led " id="led"></div> 启动
+            
+           <div class="pull-right"> <input  type="checkbox" name="checkbox1" checked></div>
+        </li>
+        <li class="list-group-item">IO模块
+           <div class="pull-right">            
+            <select class="selectpicker"   id="board" >
+              <option value="0">module 1</option>
+              <option value="1">module 2</option>
+            </select></div>
+        </li>
+      <li class="list-group-item"><div class="led " id="led"></div>LED1 控制
+           
+         <div class="pull-right"> <input  type="checkbox" name="checkbox2" checked></div>
+      </li>
+      <li class="list-group-item"><div class="led " id="led"></div>LED1 闪烁
+           
+          <div class="pull-right"> <input  type="checkbox" name="checkbox3" checked></div>
+      </li>
+      <li class="list-group-item"><div class="led " id="led"></div>LED2 控制
+           
+          <div class="pull-right"> <input  type="checkbox" name="checkbox4" checked></div>
+      </li>
+      <li class="list-group-item"><div class="led " id="led"></div> LED2 闪烁
+          
+          <div class="pull-right"> <input  type="checkbox" name="checkbox5" checked></div>
+      </li>
+      <li class="list-group-item"><div class="led " id="led"></div> 按键输入
+          
+          <div class="pull-right"> <input  type="checkbox" name="checkbox6" checked></div>
+      </li>
+    </ul>
+</div>
+
+  </body>
+  </html>
